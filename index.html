@@ -1,0 +1,259 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion Tres</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/V5.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1> LOS VOLCÁNES</h1>
+       </div>
+      <div data-role="main" class="ui-content">
+  <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/V5.png',1)"><img src="imagenes/C10.png" width="425" height="315" id="Image1"></a> </div>
+    <br>
+  </div>
+   <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿QUE ES UN VOLCÁN?</h2>
+    <p>Se muestra información sobre que son los volcanes</p>
+      </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>VOLCÁN POPOCATÉPETL</h2>
+    <p>Se muestra información sobre el Volcán</p>
+      </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>VOLCÁN DE COLIMA</h2>
+       <p>Se muestra información sobre el Volcán</p>
+       </a>
+     </li>
+    </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+     <h4>Aplicacion Tres</h4>
+     <h4>Volcán Popocatépetl</h4>
+     <h4>Rojas Dominguez Mayra</h4>
+   </div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿QUE ES UN VOLCÁN?</h1>
+  </div>
+ <div data-role="content">
+    <div>
+La palabra volcán proviene de Vulcano. Se trata de un conducto que establece comunicación directa entre la superficie terrestre y los niveles profundos de la corteza terrestre. Los volcanes son aberturas que se encuentran en montañas o en la tierra; cada un cierto periodo de tiempo, expulsan lava, gases, cenizas y humo.
+<br>
+<br>
+<img src="imagenes/P8.png" width="451" height="311"><br>
+<br>
+La erupción, tal como se conoce a ese proceso de expulsión, acontece cuando el magma (una mezcla de roca fundida, gases y otros componentes) que se encuentra bajo presión comienza a ascender.
+Entre los principales tipos de erupciones volcánicas, teniendo en cuenta criterios tales como la viscosidad o la temperatura de las mismas, se encuentran el hawaiano, el vulcaniano, el surtseyano, las submarinas, las fisurales, el peleano, el vesubiano o el mixto.
+<br>
+<br>
+<img src="imagenes/V8.png" width="450" height="297"> </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres, Volcan Popocatepetl, RDM</h4>
+    </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Volcán Popocatépetl</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+ <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:900px;height:250px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+ <div>
+ <h4>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’) es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.
+<br>
+<br>
+Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.</h4>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>UBICACIÓN</h1>
+    <p><img src="imagenes/P7.png" width="375" height="262"> </p>
+    <p>El Popocatépetl se encuentra a 55 kilómetros (menos de 15 millas) de la Ciudad de México y a 45 de la de Puebla, En el Parque Nacional Izta-Popo.
+      En la Sierra Nevada, se alza el Popocatépetl, en los estados de México, Puebla y Morelos. </p>
+ </div>
+ 
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>DIMENSIONES</h1>
+    <p><img src="imagenes/P0.png" width="407" height="305"> </p>
+    <p>5,452 m. de altura sobre el nivel del mar. 17,887 pies.
+      Su cráter mide en la parte más ancha 612 metros y en la más angosta 400. El cráter tiene una máxima profundidad de 505 metros y es el vértice donde limitan tres estados: México, Puebla y Morelos
+      Es el segundo más alto de nuestro país; el primero lo ocupa el Pico de Orizaba o Citlaltépetl con 5,747 m y el tercero el Iztaccíhuatl o Ixtaccíhualtl, con 5,286 m de altura.
+      Las dos principales cimas del Popo son el Pico Mayor y el Espinazo del Diablo, ambos alrededor del cráter.
+      Forma parte del Sistema Volcánico Transversal </p>
+ </div>
+     
+     <div data-role="collapsible" data-content-theme="false">
+    <h1>DEPENDENCIAS QUE LO MONITOREAN</h1>
+<BR>
+<a href="http://www.cenapred.unam.mx:8080/monitoreoPopocatepetl/">CENAPRED</a>
+      </div>
+      
+       <div data-role="collapsible" data-content-theme="false">
+    <h1>MEDIDAS PREVENTIVAS</h1>
+    
+   <h3> Consejos de seguridad:</h3>
+
+1)Mantente alejado de volcanes activos.
+<BR>
+<BR>
+2)Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+<BR>
+<BR>
+3)Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+<BR>
+<BR>
+4)Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+5)Evita zonas de ríos y regiones bajas.
+<BR>
+<BR>
+6)Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+<BR>
+<BR>
+7)Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+<BR>
+<BR>
+8)Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+<BR>
+<BR>
+9)La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora.
+      </div>
+      </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres,Volcan Popocatepetl, RDM</h4>
+ </div>
+ </div>
+</div>
+
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Volcán de Colima</h1>
+ </div>
+  <div data-role="content" >
+  <div>
+ </div>
+ <div>
+ <h4>
+ El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México. El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.
+ <br>
+ <br>
+ A lo largo de 500 años, el volcán ha tenido más de 40 explosiones desde 1576, de entre las cuales destacan las de 1585, 1606, 1622, 1690, 1818, 1890, 1903, 1913 (el 13 de enero de ese año se cerró el cuarto ciclo de actividad) y 1999. El 6 de junio del 2005, a las 11.00 (hora local), se produjo una columna eruptiva que alcanzó 4 km sobre el volcán, arrojó cenizas de roca y piroclastos, y desde principios de enero del 2013 se ha clasificado en actividad creciente (se produjo una explosión estruendosa el día 29). Su ciclo eruptivo es de aproximadamente 100 años; en 2015 comenzó a presentar un aumento en su actividad que está en constante vigilancia.</h4>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>UBICACIÓN</h1>
+    <p>El volcán de Fuego de Colima, (3860 m. sobre el nivel del mar) es un estratovolcán andesítico que forma parte, junto con el Nevado de Colima (4330 msnm.), de un complejo volcánico situado en el Cinturón Neovolcánico Mexicano y cuyas coordenadas geográficas (19º30'44''N y 103º37'02''W) lo sitúan entre los Estados de Colima (municipios de Comala y Cuauhtémoc) y Jalisco (municipios de Tuxpan, Zapotitlán y Tonila. </p>
+    <p><img src="imagenes/CU.png" width="446" height="245"></p>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+    <h1>DIMENSIONES</h1>
+     <p>El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años. </p>
+     <p><img src="imagenes/Cfgergtg.png" width="378" height="228"></p>
+ </div>
+     <div data-role="collapsible" data-content-theme="false">
+    <h1>DEPENDENCIAS QUE LO MONITOREAN</h1>
+    CENAPRED:
+    <a href="http://www.cenapred.unam.mx/es/">http://www.cenapred.unam.mx/es/</a>
+    <BR>
+     </div>
+      
+       <div data-role="collapsible" data-content-theme="false">
+    <h1>MEDIDAS PREVENTIVAS</h1>
+
+-Si observamos algún cambio en el volcán, como nuevas fumarolas, fuentes termales, pozos secos, cenizas o deslizamientos, comuniquémoslo a las autoridades.
+Evitemos respirar gases nocivos o polvo fino, utilizando mascarillas o tela humedecida con agua o sobre la boca y la nariz.
+<BR>
+<BR>
+-Protejamos la cabeza y hombros con un sombrero y capa gruesa.
+<BR>
+<BR>
+-Lavemos bien los vegetales que vayamos a consumir.
+<BR>
+<BR>
+-Mantengámonos enterados de la actividad del volcán por medio de los informes de la CNE, difundidos a través de los medios de comunicación (radio, T.V. y otros).
+<BR>
+<BR>
+-No usemos el teléfono, sólo en caso muy urgente.
+<BR>
+<BR>
+-Si estamos en una zona de riesgo, preparémonos para una eventual evacuación.
+<BR>
+<BR>
+-Si el volcán está en erupción, mantengámonos dentro de la casa y respiremos a través de un paño húmedo y protejámonos los ojos.
+<BR>
+<BR>
+-Cerremos todas las ventanas, puertas y conductos de ventilación de la vivienda.
+<BR>
+<BR>
+-Cubramos con paños húmedos los espacios que queden alrededor de las ventanas y puertas.
+<BR>
+<BR>
+-Usemos camisas de manga larga y pantalones largos.
+<BR>
+<BR>
+-Cubramos los depósitos de agua para evitar que se contaminen con ceniza.
+<BR>
+<BR>
+-Limpiemos la ceniza de los techos, patios y calles, depositándolas en bolsas. Nunca debemos arrojar la ceniza en los desagües para evitar que estos se tapen.
+
+      </div>
+      </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres,Volcan Popocatepetl, RDM</h4>
+ </div>
+ </div>
+ </div>
+
+ </body>
+ </html>
